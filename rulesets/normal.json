@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "condition": {
+      "regexFilter": ".*\\/search\\?.*gs_lcrp=.*",
+      "resourceTypes": ["main_frame"]
+    },
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "queryTransform": {
+            "addOrReplaceParams": [
+              {
+                "key": "udm",
+                "value": "14"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+]
